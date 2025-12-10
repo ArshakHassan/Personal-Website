@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arshak Hassan Portfolio</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Sticky Navigation Header (Pure CSS/HTML) -->
+    <header class="sticky top-0 z-50 transition-all duration-300 header-bg border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#home" class="flex-shrink-0">
+                    <span class="font-extrabold text-2xl tracking-wider text-white">
+                        ARSHAK<span class="text-cyan-400">.IO</span>
+                    </span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:block">
+                    <div class="flex items-center space-x-4">
+                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium text-cyan-400 bg-slate-800 border border-cyan-500/50 hover:text-white hover:bg-slate-700 transition-colors">Home</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">About</a>
+                        <a href="#education" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Education</a>
+                        <a href="#skills" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Skills</a>
+                        <a href="#projects" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Projects</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800 transition-colors">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <label for="menu-toggle" class="p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none cursor-pointer">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </label>
+                    <input type="checkbox" id="menu-toggle" class="hidden">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-slate-900 border-t border-slate-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+                <a href="#about" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="#education" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Education</a>
+                <a href="#skills" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Skills</a>
+                <a href="#projects" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="#contact" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        <!-- 1. HOME / HERO SECTION -->
+        <section id="home" class="min-h-[calc(100vh-64px)] flex items-center justify-center p-4 pt-16">
+            <div class="text-center max-w-4xl space-y-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+                    Hello, I'm <span class="text-cyan-400">Arshak Hassan</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto">
+                    Machine Learning Enthusiast | B.Tech Graduate
+                </p>
+                <div class="pt-8 flex justify-center gap-4">
+                    <a href="#projects" class="bg-cyan-600 hover:bg-cyan-500 text-white font-semibold py-3 px-8 rounded-full transition duration-300 shadow-lg shadow-cyan-500/30">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-8 rounded-full transition duration-300">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT SECTION -->
+        <section id="about" class="p-4">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <h2 class="text-4xl font-bold text-center text-white border-b-2 border-cyan-500 pb-2">About Me</h2>
+                
+                <div class="bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700">
+                    <p class="text-lg text-slate-300 leading-relaxed mb-6">
+                        I am Arshak Hassan, a recent B.Tech Graduate from Kerala Technological University driven by a deep passion for Machine Learning. My primary focus lies in transforming raw data into intelligent systems, particularly in the domains of Natuaral Language Processing, Computer Vision and Deep Learning.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        Now i actively seeking my first professional role in the field.I am dedicated to honing my technical skills to contribute meaningful, real-world solutions. and i continuesly learn new technologies and adapts to changes quickly 
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 flex items-center gap-4">
+                        <span class="text-cyan-400">
+                            <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20h-4.5"></path>
+                                <path d="M10 7L6.5 3"></path>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Commitment to Learning</h3>
+                            <p class="text-slate-400 text-sm">Always exploring new architectures and algorithms.</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 flex items-center gap-4">
+                        <span class="text-yellow-400">
+                            <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M15 14a4 4 0 0 0-8 0"></path>
+                                <path d="M18 10h.01"></path>
+                                <path d="M6 10h.01"></path>
+                                <path d="M12 2v2"></path>
+                                <path d="M22 12h-2"></path>
+                                <path d="M4 12H2"></path>
+                                <path d="M19.78 4.22l-1.42 1.42"></path>
+                                <path d="M5.64 18.36l-1.42 1.42"></path>
+                            </svg>
+                        </span>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white">Problem Solver</h3>
+                            <p class="text-slate-400 text-sm">Focused on building impactful, practical ML applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. EDUCATION SECTION -->
+        <section id="education" class="py-20 p-4 bg-slate-800/50">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <h2 class="text-4xl font-bold text-center text-white border-b-2 border-cyan-500 pb-2">Academic Journey</h2>
+                
+                <div class="bg-slate-900 p-8 rounded-xl shadow-lg border border-slate-700 space-y-6">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-slate-700 pb-4">
+                        <div class="flex items-center gap-4 mb-4 sm:mb-0">
+                            <span class="text-cyan-400">
+                                <svg class="lucide-icon w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M22 10v6m0-6V7a2 2 0 0 0-2-2h-3"></path>
+                                    <path d="M16 20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h3"></path>
+                                    <path d="M12 22V4"></path>
+                                    <path d="M8 5V2"></path>
+                                </svg>
+                            </span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Kerala Technological University</h3>
+                                <p class="text-lg text-slate-300">B.Tech in Computer Science</p>
+                            </div>
+                        </div>
+                        <span class="text-sm font-medium text-slate-400 bg-slate-700 px-3 py-1 rounded-full">2021 – 2025</span>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-3">Key Focus Areas:</h4>
+                        <ul class="list-disc list-inside text-slate-400 space-y-2 ml-4">
+                            <li>Core Computer Science Fundamentals</li>
+                            <li>Advanced Data Structures and Algorithms</li>
+                            <li>In-depth study of Deep Learning, Computer Vision, and Software Engineering Principles.</li>
+                            <li>Statistical Analysis for Data Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SKILLS SECTION -->
+        <section id="skills" class="py-20 p-4">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <h2 class="text-4xl font-bold text-center text-white border-b-2 border-cyan-500 pb-2">Technical Skills</h2>
+                
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 transition duration-300 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-900/20">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-2xl">🐍</span>
+                            <span class="text-sm font-semibold text-yellow-400">Beginner</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-1">Python</h3>
+                        <p class="text-slate-400 text-sm">Core competency in my academic and project work.</p>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 transition duration-300 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-900/20">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-2xl">📷</span>
+                            <span class="text-sm font-semibold text-teal-400">Project Exposure</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-1">OpenCV</h3>
+                        <p class="text-slate-400 text-sm">Core competency in my academic and project work.</p>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 transition duration-300 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-900/20">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-2xl">🛠️</span>
+                            <span class="text-sm font-semibold text-blue-400">Beginner</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-1">C Programming</h3>
+                        <p class="text-slate-400 text-sm">Core competency in my academic and project work.</p>
+                    </div>
+                    
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 transition duration-300 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-900/20">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-2xl">🧠</span>
+                            <span class="text-sm font-semibold text-purple-400">Project Exposure</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-1">Deep Learning</h3>
+                        <p class="text-slate-400 text-sm">Core competency in my academic and project work.</p>
+                    </div>
+
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 transition duration-300 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-900/20">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-2xl">🌐</span>
+                            <span class="text-sm font-semibold text-green-400">Basic Concepts</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-1">Web Development</h3>
+                        <p class="text-slate-400 text-sm">Core competency in my academic and project work.</p>
+                    </div>
+                    
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 transition duration-300 hover:border-cyan-500 hover:shadow-xl hover:shadow-cyan-900/20">
+                        <div class="flex items-center justify-between mb-3">
+                          <span class="text-2xl">🧠</span>
+                          <span class="text-sm font-semibold text-purple-400">Application</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-1">Neural Networks (CNN/PNN)</h3>
+                        <p class="text-slate-400 text-sm">Experience in implementing and training various network architectures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS SECTION -->
+        <section id="projects" class="py-20 p-4 bg-slate-800/50">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <h2 class="text-4xl font-bold text-center text-white border-b-2 border-cyan-500 pb-2">My Portfolio</h2>
+                
+                <div class="space-y-10">
+                    <div class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-cyan-400">Drivers Drowsiness Detection</h3>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            Developed a Convolutional Neural Network (CNN) model using Python to monitor driver alertness in real-time. The system heavily utilizes OpenCV and computer vision techniques (eye aspect ratio) to process video streams, detect signs of drowsiness, and issue warnings. This project showcases practical application of deep learning for safety-critical systems.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">CNN</span>
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">OpenCV</span>
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-cyan-400">Student Engagement Detection During Online Class</h3>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            Designed a system in Python to assess student engagement levels during virtual learning sessions. Utilizes a Probabilistic Neural Network (PNN) and Computer Vision techniques to analyze facial expressions and head movements, providing metrics on attention and focus. A key demonstration of applying novel neural network architectures to behavioral analysis.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">PNN (Probabilistic Neural Network)</span>
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">Computer Vision</span>
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-xl border border-slate-700 hover:border-blue-500 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-cyan-400">Website Clone</h3>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            Replicated the front-end design and basic functionality of a popular website. This exercise focused on mastering core web development technologies, responsiveness, and clean UI/UX implementation.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">HTML</span>
+                            <span class="px-3 py-1 bg-slate-700 text-sm font-medium text-white rounded-full">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="py-20 p-4">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <h2 class="text-4xl font-bold text-center text-white border-b-2 border-cyan-500 pb-2">Get In Touch</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-1 space-y-6">
+                        <div class="flex items-center gap-4 p-4 bg-slate-800 rounded-xl border border-slate-700">
+                            <span class="text-cyan-400">
+                                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="text-sm text-slate-400">Email</p>
+                                <a href="mailto:arshakedathodi11@gmail.com" class="text-white hover:text-cyan-400 transition-colors">arshakedathodi11@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-slate-800 rounded-xl border border-slate-700">
+                            <span class="text-cyan-400">
+                                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="text-sm text-slate-400">Location</p>
+                                <p class="text-white">Kochi, India</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-white pt-4">Connect with me:</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/arshak-hassan-985305244" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-700 rounded-full text-white hover:bg-blue-600 transition duration-300">linkedin
+                                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 0 0-12 0v8h3V17"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                    <path d="M18 10a6 6 0 0 0-12 0"></path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ArshakHassan" target="_blank" rel="noopener noreferrer" class="p-3 bg-slate-700 rounded-full text-white hover:bg-purple-600 transition duration-300">GitHub
+                                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.8c0-3.1 1.6-3.7 3-4s2.5-.2 2.5-3.1c0-2.4-1.2-4.5-5-5.5s-4-1.3-4-1.3l-.2-.5c0-1.2-.5-2.2-2.5-2.8s-3 .3-3 2.5v.5s-.8 0-1.2-.3c-.6-.3-1.4-.4-1.4-.4-.8 0-1.4.5-1.4 1.3v.4c.5.2 1.2.6 1.7 1.2.7.7 1.2 1.7 1.2 3v.8c0 1.6-1.5 2.2-4 2.8-2.5.6-4 1.7-4 3v4"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-2 bg-slate-800 p-8 rounded-xl shadow-lg border border-slate-700">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send an Enquiry</h3>
+                        
+                        <form action="mailto:arshakedathodi11@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-500 text-white transition-colors" placeholder="Arshak Hassan" required />
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-500 text-white transition-colors" placeholder="your@email.com" required />
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-500 text-white transition-colors" placeholder="I'd like to discuss a collaboration..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full flex items-center justify-center gap-2 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-cyan-500/30 transition-all">
+                                Send Message
+                                <svg class="lucide-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800 text-center">
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="https://www.linkedin.com/in/arshak-hassan-985305244" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-colors">
+                <svg class="lucide-icon h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M16 8a6 6 0 0 0-12 0v8h3V17"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                    <path d="M18 10a6 6 0 0 0-12 0"></path>
+                </svg>
+            </a>
+            <a href="https://github.com/ArshakHassan" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-purple-400 transition-colors">
+                <svg class="lucide-icon h-6 w-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.8c0-3.1 1.6-3.7 3-4s2.5-.2 2.5-3.1c0-2.4-1.2-4.5-5-5.5s-4-1.3-4-1.3l-.2-.5c0-1.2-.5-2.2-2.5-2.8s-3 .3-3 2.5v.5s-.8 0-1.2-.3c-.6-.3-1.4-.4-1.4-.4-.8 0-1.4.5-1.4 1.3v.4c.5.2 1.2.6 1.7 1.2.7.7 1.2 1.7 1.2 3v.8c0 1.6-1.5 2.2-4 2.8-2.5.6-4 1.7-4 3v4"></path>
+                </svg>
+            </a>
+        </div>
+        <p class="text-slate-500 text-sm">
+            Designed and Coded by Arshak Hassan | &copy; 2024
+        </p>
+    </footer>
+
+</body>
+</html>
